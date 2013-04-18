@@ -1,0 +1,70 @@
+*{
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+ul{margin:0;}
+h1{
+	font-size: 20px;
+}
+
+.page{
+	width: 960px;
+	margin: 0 auto;
+
+}
+.logo{
+	background-color: pink;
+	width: 220px;
+	text-align: center;
+}
+nav.primary > ul{
+	border-bottom: 1px solid #ccc;
+}
+nav.primary li{
+	padding: 0 36px;
+}
+nav.primary li a{
+	font-size: 14px;	
+	cursor: pointer;
+}
+nav.primary h3{
+	font-size: 14px;
+	line-height: 16px
+}
+.flyout-box{
+	height: 0;
+}
+.flyout-box h3{
+	margin-left: 35px;
+}
+.flyout-box section{
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0 20px 0;
+}
+.carousel{
+	background-color: purple;
+	height: 300px;
+	width: 100%;	
+}
+
+nav > ul{
+	text-decoration: none;
+	list-style-type: none;	
+}
+.horizontal li{
+	display:inline-block;
+}
+
+//Utilities
+.shim{
+	padding: 10px;	
+}
+.shim-sides{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.round{
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px; /* future proofing */
+	-khtml-border-radius: 4px; 
+}
