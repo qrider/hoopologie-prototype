@@ -75,8 +75,10 @@ var SiteNav = function(){};
 		},
 		hidePrimaryNav : function($el, val, ev){
 			var flyout = this.$module.find("div.flyout-box");
-			if(flyout.height() == _FLYOUT_HEIGHT)
+			if(flyout.height() == _FLYOUT_HEIGHT){
 				flyout.animate( { height: 0 }, _ANIMATION_DURATION);
+				flyout.find("section").addClass("hide");
+			}
 		}
 	});
 }(jQuery));

@@ -24,33 +24,44 @@
 
         <!-- Add your site or application content here -->
         <div class="page">
-	        <div class="row-fluid">
-	        	<div class="span4"></div>        		
-	        	<div class="span4">
-	        		<nav class="horizontal">
-	        			<ul>
-	        				<li><a href="#">
-	        					Sign in
-	        				</a></li>
-	        				<li><span class="pipe">|</span></li>
-	        				<li><a href="#">
-	        					New Guest?
-	        				</a></li>	        					        				
-	        			</ul>
-	        		</nav>
-	        	</div>
-	        	<div class="span4">social icons</div>	     
+	        <div class="row-fluid">       		
+	        	<div class="span12">
+	        		<div class="navbar">
+  						<div class="navbar-inner">
+    						<div class="container">
+    							<div class="nav-collapse collapse clearfix">
+				        			<form class="navbar-search pull-right">
+				  						<input type="text" class="search-query" placeholder="Search">
+									</form>
+    							  <ul class="horizontal nav pull-right">    							  	
+    								<li class="dropdown">
+				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign-in <b class="caret"></b></a>
+				                        <ul class="dropdown-menu">
+				                          <li><label>Username: <input type="text" class="span6"></label></li>
+				                          <li><label>Password: <input type="text" class="span6"></label></li>
+				                          <li><a href="#">Login</a></li>
+				                        </ul>
+				                      </li>
+				                      <li class="divider-vertical"></li>
+				                      <li><a href="#">New Guest</a></li>
+				                      <li class="divider-vertical"></li>
+				                  </ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	     
 	        </div>
 	        <div class="row-fluid">
 	        	<div class="span6">
 	    			<h1 class="logo">HOOPOLOGIE</h1>
 	        	</div>
-	        	<div class="span6">Free Shipping</div>
+	        	<div class="span6"></div>
 	        </div>
 	        <div class="row-fluid">
 	        	<div class="span12">
-		        	<nav id="site-nav" class="primary">
-		    			<ul class="horizontal">
+		        	<nav id="site-nav" class="primary navbar navbar-static-top">
+		    			<ul class="horizontal nav">
 		    				<li class="first"><a href="#" data-val="holographic" title="Holographic Tape">Holographic</a></li>
 		    				<li><a href="#" data-val="prismatic" title="Prismatic Tape">Prismatic</a></li>
 		    				<li><a href="#" data-val="slickgloss">Slick Gloss</a></li>
@@ -108,9 +119,10 @@
 	        		</div>
 	        	</section>
 	        </div>
-    	</div>
+    	</div>    	
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="js/lib/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/lib/bootstrap.js"></script>
         <script src="js/site.js"></script>
     </body>
 </html>
