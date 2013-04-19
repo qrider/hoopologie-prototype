@@ -51,34 +51,47 @@ var SiteNav = function(){};
 
 
 (function($){
-	var _FLYOUT_HEIGHT = 150;	
+	var _DRAWER_HEIGHT = 150;
 	var _ANIMATION_DURATION = 400;
+	var _MAINOFFSET = 230;
+	var _drawer = $("section.drawer .drawer-container");	
+	var _main = $("div.main");
+	var _header = $("section.header");
+	var _timer;
 
 	$.extend(SiteNav.prototype, Module, {
 		init : function(){
 			return this._init("#site-nav");
 		},
 		attachEvents : function(){
-			this.$module.find("> ul").on("mouseenter", "li a", this.handleEvent(this.showPrimaryNav));
-			this.$module.on("mouseleave", this.handleEvent(this.hidePrimaryNav))
+			this.$module.find("> ul").on(
+				"mouseenter", "li a", this.handleEvent(this.showPrimaryNav)
+			).on("mouseleave", this.handleEvent(this.hidePrimaryNav));
+
+			_drawer.on("mouseenter", function(){window.clearTimeout(_timer);}
+			).on("mouseleave", this.handleEvent(this.hidePrimaryNav));
 		},
 		showPrimaryNav : function($el, val, ev){
+			window.clearTimeout(_timer);
 
-			var flyout = this.$module.find("div.flyout-box");
-			flyout.find("section").addClass("hide");
-			var activeSection = flyout.find("section." + val);
+			_drawer.find("section").addClass("hide");
+			var activeSection = _drawer.find("section." + val);
 			activeSection.removeClass("hide");
 
-			if(flyout.height() == _FLYOUT_HEIGHT)
+			if(_drawer.height() == _DRAWER_HEIGHT)
 				return;
-			flyout.animate( { height: _FLYOUT_HEIGHT }, _ANIMATION_DURATION);	
+			_drawer.animate( { height: _DRAWER_HEIGHT }, _ANIMATION_DURATION);	
+			_main.animate({top: _DRAWER_HEIGHT + _MAINOFFSET}, _ANIMATION_DURATION);
 		},
 		hidePrimaryNav : function($el, val, ev){
-			var flyout = this.$module.find("div.flyout-box");
-			if(flyout.height() == _FLYOUT_HEIGHT){
-				flyout.animate( { height: 0 }, _ANIMATION_DURATION);
-				flyout.find("section").addClass("hide");
-			}
+		
+			_timer = window.setTimeout(function(){
+				if(_drawer.height() == _DRAWER_HEIGHT){
+					_drawer.animate( { height: 0 }, _ANIMATION_DURATION);
+					_main.animate({top:_MAINOFFSET}, _ANIMATION_DURATION);
+					_drawer.find("section").addClass("hide");
+				}
+			}, 500);
 		}
 	});
 }(jQuery));

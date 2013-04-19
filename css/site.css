@@ -10,44 +10,106 @@ h1{
 .page{
 	width: 960px;
 	margin: 0 auto;
-
 }
+.main{
+	position: relative;
+	top: 230px;	
+	height: 800px;
+}
+.header.fixed,
+.drawer.fixed{
+	width: 960px;
+	left: 50%;
+	margin-left: -480px;
+	z-index: 1;
+	background-color: white;
+}
+.row-fluid [class*="span"]{min-height: 25px;}
 .logo{
-	background-color: pink;
-	width: 220px;
+	background: url('../img/hoopologie-mainlogo.png') no-repeat 0 0;
+	width: 360px;
+	height: 140px;
 	text-align: center;
 }
-nav.primary > ul{
-	border-bottom: 1px solid #ccc;
+.navbar{
+	margin-bottom: 0;
+}
+.navbar-inner{
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border: 1px dotted #d4d4d4;
+}
+nav.primary > ul.nav{
+	border-bottom: 1px dotted #ccc;
+	padding: 0 10px 0 0;
+	margin: 0 18px;
+	float: none;
 }
 nav.primary > ul.nav a{
 	padding: 0;
 }
-nav.primary li{
-	padding: 0 36px;
+nav.primary li,
+nav.sub li{
+	padding: 0 32px;
 }
-nav.primary li a{
-	font-size: 14px;	
+nav.primary li a,
+nav.sub li a{
+	font-size: 16px;	
 	cursor: pointer;
+	color: #777;
 }
-nav.primary h3{
-	font-size: 14px;
-	line-height: 16px
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:focus,
+nav.primary li a:hover, 
+nav.primary li a:focus,
+nav.sub li a:hover, 
+nav.sub li a:focus  {
+	color: #ff00ff;
 }
-.flyout-box{
-	height: 0;
+
+.drawer h3{
+	font-size: 20px;
+	line-height: 22px;
+	color: #ff00ff;
 }
-.flyout-box h3{
+.drawer{	
+	top: 226px;	
+}
+.drawer-container,
+.drawer-divider{
+	width: 97%;
+	margin: 0 auto;
+}
+.drawer-divider{
+	border-bottom: 1px dotted #CCC;
+	margin-bottom: 2px;
+}
+.drawer-container{
+	background-color: #FAFAFA;
+	background-image: -moz-linear-gradient(top, white, #F2F2F2);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#F2F2F2));
+	background-image: -webkit-linear-gradient(top, white, #F2F2F2);
+	background-image: -o-linear-gradient(top, white, #F2F2F2);
+	background-image: linear-gradient(to bottom, white, #F2F2F2);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);	
+}
+.drawer h3{
 	margin-left: 35px;
 }
-.flyout-box section{
-	border-bottom: 1px solid #ccc;
-	padding: 10px 0 20px 0;
+.drawer section{
+	padding: 5px 0 20px 0;
 }
-.carousel{
-	background-color: purple;
-	height: 300px;
-	width: 100%;	
+
+.carousel .item1{
+
+	background: url("../img/carousel1.jpg") no-repeat 0 0;
+	height: 400px;
+	width: 940px;
+	margin: 0 auto;
 }
 
 nav > ul{
@@ -62,6 +124,9 @@ nav > ul{
 .shim{
 	padding: 10px;	
 }
+.fixed{
+	position: fixed;
+}
 .shim-sides{
 	padding-left: 10px;
 	padding-right: 10px;
@@ -71,4 +136,31 @@ nav > ul{
 	-webkit-border-radius: 4px;
 	border-radius: 4px; /* future proofing */
 	-khtml-border-radius: 4px; 
+}
+
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(211, 255, 0, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(211, 255, 0, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(211, 255, 0, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(211, 255, 0, 0.6);
 }
