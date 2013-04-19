@@ -115,9 +115,35 @@
 	    	<div class="main">
 		        <section class="body">
 	        		<div class="row-fluid">
-		        		<div class="carousel">
-		        			<div class="carousel-item item1 img round"></div>
+	        			<div class="span12">
+			        		<div class="carousel">
+			        			<div class="carousel-item item1 img round"></div>
+			        		</div>
 		        		</div>
+		        	</div>
+		        	<div class="row-fluid">
+	        			<div class="span12 border-tb socialcontent">
+	        				<header class="clearfix">
+	        					<h4 class="shim-tb">
+	        						Join our community for Hoopologie News, Product Launches and special offers.									
+	        					</h4>
+	        					<ul class="horizontal icons-socialmedia clearfix">
+									<li><a class="icon facebook hide-text" href="">facebook</a></li>	        						
+									<li><a class="icon facebook hide-text" href="">facebook</a></li>
+									<li><a class="icon facebook hide-text" href="">facebook</a></li>	        						
+									<li><a class="icon facebook hide-text" href="">facebook</a></li>
+								</ul>	        					
+	        				</header>
+        					<form class="bgcompcolor newsletter-banner mshimlt-tb frame">
+        						<input type="text" placeholder="Enter email address">
+        						<button type="button" class="btn btn-small">Sign-up for Newsletter</button>
+        					</form>
+		        		</div>
+		        	</div>
+		        	<div class="row-fluid">
+	        			<div class="span12 border-b">
+        					<h4 class="shim-tb">About Hoopologie</h4>
+	        			</div>
 		        	</div>
 	        	</section>
 	    		<section class="footer">
