@@ -24,93 +24,85 @@
 
         <!-- Add your site or application content here -->
         <div class="page">
-        	<header>
-        		<section class="fixed header">
-		        <div class="row-fluid">       		
-		        	<div class="span12">
-		        		<div class="navbar">
-	  						<div class="navbar-inner">
-	    						<div class="container">
-	    							<div class="nav-collapse collapse clearfix">
-					        			<form class="navbar-search pull-right">
-					  						<input type="text" class="search-query" placeholder="Search">
-										</form>
-	    							  <ul class="horizontal nav pull-right">    							  	
-	    								<li class="dropdown">
-					                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign-in <b class="caret"></b></a>
-					                        <ul class="dropdown-menu">
-					                          <li><label>Username: <input type="text" class="span6"></label></li>
-					                          <li><label>Password: <input type="text" class="span6"></label></li>
-					                          <li><a href="#">Login</a></li>
-					                        </ul>
-					                      </li>
-					                      <li class="divider-vertical"></li>
-					                      <li><a href="#">New Guest</a></li>
-					                      <li class="divider-vertical"></li>
-					                  </ul>
-									</div>
-								</div>
+        	<header class="shim-b">
+        		<section class="header">
+		        <header class="row-fluid">       		
+		        	<div class="span4">
+		    			<h1 class="logo hide-text">HOOPOLOGIE</h1>
+					</div>
+					<div class="span8">
+						<div class="clearfix pull-right shim-t">  
+							<div class="pull-left top">
+								<ul class="nav nav-pills shim-t">
+								  <li>
+								    <a href="#">Login or Register Account</a>
+								  </li>
+  								  <li>
+								    <a href="#">Wishlist</a>
+								  </li>
+								</ul>
+							</div>
+							<div class="pull-left">
+		        				<form class="navbar-search pull-right">
+		  							<input type="text" class="search-query" placeholder="Search Hoopologie">
+								</form>
 							</div>
 						</div>
+						<div class="row-fluid"> 
+							<div class="span12">
+
+							</span>
+						</div>
 					</div>	     
-		        </div>
-		        <div class="row-fluid">
-		        	<div class="span6">
-		    			<h1 class="logo hide-text">HOOPOLOGIE</h1>
-		        	</div>
-		        	<div class="span6"></div>
-		        </div>
+		        </header>
 		        <div class="row-fluid">
 		        	<div class="span12">
-			        	<nav id="site-nav" class="primary navbar">
-			    			<ul class="horizontal nav clearfix">
-			    				<li class="first"><a href="#" data-val="holographic" title="Holographic Tape">Holographic</a></li>
-			    				<li><a href="#" data-val="prismatic" title="Prismatic Tape">Prismatic</a></li>
-			    				<li><a href="#" data-val="slickgloss">Slick Gloss</a></li>
-			    				<li><a href="#" data-val="electrical">Electrical</a></li>
-			    				<li><a href="#" data-val="gaffer">Gaffer/Grip</a></li>
-			    				<li><a href="#" data-val="protection">Protection</a></li>
-			    				<li class="last"><a href="#" data-val="blog">Blog</a></li>
+			        	<nav id="site-nav" class="primary">
+			    			<ul class="nav nav-pills">
+			    				<li class="first"><a class="color2-1" href="#" data-val="holographic" title="Holographic Tape">Holographic</a></li>
+			    				<li><a class="color3-1" href="#" data-val="prismatic" title="Prismatic Tape">Prismatic</a></li>
+			    				<li><a class="color4-1" href="#" data-val="slickgloss">Slick Gloss</a></li>
+			    				<li><a class="color5-1" href="#" data-val="electrical">Electrical</a></li>
+			    				<li><a class="color6-1" href="#" data-val="gaffer">Gaffer/Grip</a></li>
+			    				<li><a class="color7-1" href="#" data-val="protection">Protection</a></li>
+			    				<li class="last"><a class="color1-1" href="#" data-val="blog">Blog</a></li>
 			    			</ul>
+			        	</nav>
+			        	<nav id="site-nav-tabs" class="primary">
+							<section class="holographic hide color2-2">
+								<h3>Holographic Tapes</h3>
+								<nav class="sub clearfix">
+									<ul class="vertical pull-left">
+										<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
+										<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
+										<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
+									</ul>
+									<ul class="vertical pull-left">
+										<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
+										<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
+										<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
+									</ul>
+								</nav>
+							</section>
+							<section class="prismatic hide color3-2">
+								<h3>Prismatic Tapes</h3>
+								<nav class="sub clearfix">		    						
+									<ul class="vertical pull-left">
+										<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
+										<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
+										<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
+									</ul>
+									<ul class="vertical pull-left">
+										<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
+										<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
+										<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
+									</ul>
+								</nav>
+							</section>
 			        	</nav>
 		        	</div>
 		        </div>
 		    </section>
-    			<section class="fixed drawer">
-    				<div class="drawer-container">
-					<section class="holographic hide">
-						<h3>Holographic Tapes</h3>
-						<nav class="sub clearfix">
-							<ul class="vertical pull-left">
-								<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
-								<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
-								<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
-							</ul>
-							<ul class="vertical pull-left">
-								<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
-								<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
-								<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
-							</ul>
-						</nav>
-					</section>
-					<section class="prismatic hide">
-						<h3>Prismatic Tapes</h3>
-						<nav class="sub clearfix">		    						
-							<ul class="vertical pull-left">
-								<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
-								<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
-								<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
-							</ul>
-							<ul class="vertical pull-left">
-								<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
-								<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
-								<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
-							</ul>
-						</nav>
-					</section>
-				</div>
-				<div class="drawer-divider"></div>
-			    </section>
 	    	</header>
 	    	<div class="main">
 		        <section class="body">
@@ -122,39 +114,46 @@
 		        		</div>
 		        	</div>
 		        	<div class="row-fluid">
-	        			<div class="span12 border-tb socialcontent">
-	        				<header class="clearfix">
-	        					<h4 class="shim-tb">
-	        						Join our community for Hoopologie News, Product Launches and special offers.									
-	        					</h4>
-	        					<ul class="horizontal icons-socialmedia clearfix">
-									<li><a class="icon facebook hide-text" href="">facebook</a></li>	        						
-									<li><a class="icon facebook hide-text" href="">facebook</a></li>
-									<li><a class="icon facebook hide-text" href="">facebook</a></li>	        						
-									<li><a class="icon facebook hide-text" href="">facebook</a></li>
-								</ul>	        					
-	        				</header>
-        					<form class="bgcompcolor newsletter-banner mshimlt-tb frame">
-        						<input type="text" placeholder="Enter email address">
-        						<button type="button" class="btn btn-small">Sign-up for Newsletter</button>
-        					</form>
+		        		<div class="span4">
+	        					<div class="module color2-1 round">
+	        						<header>New Products</header>
+	        						<div class="content">
+        								<img src="img/tape.jpg" />
+	        						</div>
+	        						<footer></footer>
+	        					</div>
+	        					<div class="module color4-1 round">
+	        						<header>Tape of the Month</header>
+	        						<div class="content"><img src="img/tape.jpg" /></div>
+	        						<footer><p>For press inquiries please email <a href="mailto:press@hoopologie.com">press@hoopologie.com</a>. <a href="/press-awards"><span class="grid-link">View Press</span> <span class="grid-link-arrow">►</span></a></p></footer>
+	        					</div>
 		        		</div>
-		        	</div>
-		        	<div class="row-fluid">
-	        			<div class="span12 border-b">
-        					<h4 class="shim-tb">About Hoopologie</h4>
+		        		<div class="span4">
+	        					<div class="module color3-1 round">
+	        						<header>Rewards Program</header>
+	        						<div class="content"><img src="img/tape.jpg" /></div>
+	        						<footer></footer>
+	        					</div>
+	        					<div class="module color5-1 round">
+	        						<header>Host a Hoop Party</header>
+	        						<div class="content"><img src="img/tape.jpg" /></div>
+	        						<footer></footer>
+	        					</div>
 	        			</div>
+		        		<div class="span4">
+	    					<div class="module color6-1 round">
+	    						<header>JOIN OUR COMMUNITY</header>
+	    						<div class="content">
+	    							<img src="img/tape.jpg" />
+	    							<p>These beautiful holographic adhesive tapes sparkle with a rainbow of colors.  They have a peel-off liner and can be used for exciting visual effects on dance & exercise hoops, gift packages, scrap books, etc.  Holographic tapes are 2.5 mils in thickness (0.0025") and 1 inch in width.  These tapes use a solventless, non-toxic, non-polluting adhesive, and they comply with the European Union RoHS directive that strongly limits the concentrations of lead, mercury, hexavalent chromium, cadmium, PBBs, and PBDE.</p>
+	    						</div>
+	    						<footer></footer>
+	    					</div>
+		        		</div>
 		        	</div>
 	        	</section>
 	    		<section class="footer">
 	        		<div class="row-fluid">
-	        			<nav class="horizontal">
-		        			<ul>
-		        				<li><a href="#">Shipping</a></li>
-		        				<li><a href="#">Terms & Conditions</a></li>
-		        				<li><a href="#">Contact Us</a></li>
-		        			</ul>
-	        			</nav>
 	        		</div>
 	        	</section>
 	        </div>

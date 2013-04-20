@@ -1,6 +1,9 @@
 *{
 	font-family: Georgia, "Times New Roman", Times, serif;
-	color: #777;
+	color: #562700;
+}
+body{
+	background-color: #F6F2E9
 }
 ul{margin:0;}
 h1{
@@ -18,97 +21,202 @@ h4{
 	width: 960px;
 	margin: 0 auto;
 }
-.main{
-	position: relative;
-	top: 230px;	
-	height: 800px;
-}
-.header.fixed,
-.drawer.fixed{
-	width: 960px;
-	left: 50%;
-	margin-left: -480px;
-	z-index: 1;
-	background-color: white;
-}
+
 .row-fluid [class*="span"]{min-height: 25px;}
 .logo{
-	background: url('../img/hoopologie-mainlogo.png') no-repeat 0 0;
-	width: 360px;
-	height: 140px;
+	background: url('../img/twin-hoops-logo.png') no-repeat 0 0;
+	width: 300px;
+	height: 45px;
 	text-align: center;
 }
-.navbar{
-	margin-bottom: 0;
+
+/*Nav Items*/
+header .nav{margin:0;}
+header .top .nav a{
+	color: #b843bd;	
+	background-color: transparent;
 }
-.navbar-inner{
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-	border: 1px dotted #d4d4d4;
+header .top .nav a:hover{
+	color: #fff;	
+	background-color: #b843bd;
 }
-nav.primary > ul.nav{
-	border-bottom: 1px dotted #ccc;
-	padding: 0 10px 0 0;
-	margin: 0 18px;
-	float: none;
+a[class*="color"]:link,
+a[class*="color"]:visited{
+	background-color: transparent;
 }
-nav.primary > ul.nav a{
-	padding: 0;
+
+.nav-pills a[class*="color"]:focus,
+.nav-pills a[class*="color"]:hover,
+.nav-pills a[class*="color"].active{
+	color: #fff;
 }
-nav.primary li,
-nav.sub li{
-	padding: 0 32px;
+
+.primary ul{
+	margin: 0 5%;
 }
-nav.primary li a,
-nav.sub li a{
-	font-size: 16px;	
-	cursor: pointer;
-	color: #777;
+.primary .nav-pills > li > a{
+	padding-left: 30px;
+	padding-right: 30px;
 }
-.navbar .nav > li > a:hover,
-.navbar .nav > li > a:focus,
-nav.primary li a:hover, 
-nav.primary li a:focus,
-nav.sub li a:hover, 
-nav.sub li a:focus  {
-	color: #ff00ff;
+/*Module*/
+.module {
+	margin: 10px 0;
 }
+.module header{
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+
+/*COLORS*/
+.color1-1,
+a.color1-1.active,
+a.color1-1:focus,
+a.color1-1:hover{
+	color: #B943BD;
+	background-color: #B943BD;
+}
+
+.color1-2{
+	color: #DB8FDE;
+	background-color: #DB8FDE;
+}
+
+.color1-3{
+	color: #DA73DE;
+	background-color: #DA73DE;
+}
+
+.color2-1,
+a.color2-1.active,
+a.color2-1:focus,
+a.color2-1:hover{
+	color: #EA5283;
+	background-color: #EA5283;
+}
+
+.color2-2{
+	color: #F49DB9;
+	background-color: #F49DB9;
+}
+
+.color2-3{
+	color: #AF5A75;
+	background-color: #AF5A75;
+}
+.color3-1,
+a.color3-1.active,
+a.color3-1:focus,
+a.color3-1:hover{
+	color: #83B341;
+	background-color: #83B341;
+}
+
+.color3-2{
+	color: #83B05A;
+	background-color: #83B05A;
+}
+
+.color3-3{
+	color: #56991B;
+	background-color: #56991B;
+}
+.color4-1,
+a.color4-1.active,
+a.color4-1:focus,
+a.color4-1:hover{
+	color: #AD9FCD;
+	background-color: #AD9FCD;
+}
+
+.color4-2{
+	color: #ACBB60;
+	background-color: #ACBB60;
+}
+
+.color4-3{
+	color: #8CA21C;
+	background-color: #8CA21C;
+}
+.color5-1,
+a.color5-1.active,
+a.color5-1:focus,
+a.color5-1:hover{
+	color: #FF8659;
+	background-color: #FF8659;
+}
+
+.color5-2{
+	color: #BF7B62;
+	background-color: #BF7B62;
+}
+
+.color5-3{
+	color: #A6421D;
+	background-color: #A6421D;
+}
+.color6-1,
+a.color6-1.active,
+a.color6-1:focus,
+a.color6-1:hover{
+	color: #F15851;
+	background-color: #F15851;
+}
+
+.color6-2{
+	color: #B6F57E;
+	background-color: #B6F57E;
+}
+
+.color6-3{
+	color: #C7F59E;
+	background-color: #C7F59E;
+}
+.color7-1,
+a.color7-1.active,
+a.color7-1:focus,
+a.color7-1:hover{
+	color: #45C58B;
+	background-color: #45C58B;
+}
+
+.color7-2{
+	color: #74E2B0;
+	background-color: #74E2B0;
+}
+
+.color7-3{
+	color: #91E2BD;
+	background-color: #91E2BD;
+}
+
+
+/*OLD*/
 
 .drawer h3{
 	font-size: 20px;
 	line-height: 22px;
-	color: #ff00ff;
+	border-radius: 
 }
 .drawer{	
-	top: 226px;	
-}
-.drawer-container,
-.drawer-divider{
-	width: 97%;
-	margin: 0 auto;
-}
-.drawer-divider{
-	border-bottom: 1px dotted #CCC;
-	margin-bottom: 2px;
-}
-.drawer-container{
-	background-color: #FAFAFA;
-	background-image: -moz-linear-gradient(top, white, #F2F2F2);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#F2F2F2));
-	background-image: -webkit-linear-gradient(top, white, #F2F2F2);
-	background-image: -o-linear-gradient(top, white, #F2F2F2);
-	background-image: linear-gradient(to bottom, white, #F2F2F2);
-	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
-	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);	
-}
-.drawer h3{
-	margin-left: 35px;
+	top: 102px;	
 }
 .drawer section{
-	padding: 5px 0 20px 0;
+	padding: 15px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.drawer h3{
+	margin: 0 0 10px 0;
+	color: #562700;
+}
+.drawer a{
+	color: #562700;
 }
 
 .carousel .item1{
@@ -159,9 +267,18 @@ nav > ul{
 .icon.twitter{}
 
 /*utilities*/
-
+.flush{
+	margin:0;
+	padding:0;
+}
 .shim{
 	padding: 5px;	
+}
+.shim-t{
+	padding-top: 5px;	
+}
+.shim-b{
+	padding-bottom: 5px;	
 }
 .shim-tb{
 	padding: 5px 0;
@@ -175,6 +292,9 @@ nav > ul{
 }
 .frame{
 	padding: 15px;	
+}
+.frame-t{
+	padding-top: 15px;
 }
 .frame-tb{
 	padding: 15px 0;
@@ -191,10 +311,28 @@ nav > ul{
 	position: fixed;
 }
 .round{
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	border-radius: 4px; /* future proofing */
-	-khtml-border-radius: 4px; 
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; /* future proofing */
+	-khtml-border-radius: 3px; 
+}
+
+.round-b{
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-bottom-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-bottom-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.round-t{
+	-webkit-border-top-left-radius: 3px;
+	-moz-border-top-left-radius: 3px;
+	border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-top-right-radius: 3px;
+	border-top-right-radius: 3px;
 }
 
 
@@ -214,14 +352,14 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-  border-color: rgba(255, 96, 255, 0.8);
+  border-color: rgba(184, 67, 189, 0.8);
   outline: 0;
   outline: thin dotted \9;
   /* IE6-9 */
 
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 45, 255, 0.6);
-     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 45, 255, 0.6);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 45, 255, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(184, 67, 189, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(184, 67, 189, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(184, 67, 189, 0.6);
 }
 
 .btn-hoop {

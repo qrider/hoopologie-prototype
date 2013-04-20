@@ -51,9 +51,9 @@ var SiteNav = function(){};
 
 
 (function($){
-	var _DRAWER_HEIGHT = 150;
-	var _ANIMATION_DURATION = 400;
-	var _MAINOFFSET = 230;
+	var _DRAWER_HEIGHT = 162;
+	var _ANIMATION_DURATION = 300;
+	var _MAINOFFSET = 112;
 	var _drawer = $("section.drawer .drawer-container");	
 	var _main = $("div.main");
 	var _header = $("section.header");
@@ -61,7 +61,33 @@ var SiteNav = function(){};
 
 	$.extend(SiteNav.prototype, Module, {
 		init : function(){
-			return this._init("#site-nav");
+			this._init("#site-nav");
+			this.initialAnimation();
+			return this;
+		},
+		initialAnimation : function(){
+			var navItems = this.$module.find("a");
+			var prevItem;
+			var end = navItems.length - 1;
+			var count = 0;
+			var timer = window.setInterval(function(){
+				var item = $(navItems[count]);
+				item.addClass("active");
+
+				if(prevItem){
+					prevItem.removeClass("active");
+				}
+				prevItem = item;
+
+				if(count == end){
+					window.clearTimeout(timer);
+					//handle last item
+					timer = window.setTimeout(function(){
+						prevItem.removeClass("active");
+					}, _ANIMATION_DURATION)
+				}
+				count++;
+			}, _ANIMATION_DURATION)
 		},
 		attachEvents : function(){
 			this.$module.find("> ul").on(
@@ -72,6 +98,7 @@ var SiteNav = function(){};
 			).on("mouseleave", this.handleEvent(this.hidePrimaryNav));
 		},
 		showPrimaryNav : function($el, val, ev){
+			/*
 			window.clearTimeout(_timer);
 
 			_drawer.find("section").addClass("hide");
@@ -82,9 +109,11 @@ var SiteNav = function(){};
 				return;
 			_drawer.animate( { height: _DRAWER_HEIGHT }, _ANIMATION_DURATION);	
 			_main.animate({top: _DRAWER_HEIGHT + _MAINOFFSET}, _ANIMATION_DURATION);
+
+			*/
 		},
 		hidePrimaryNav : function($el, val, ev){
-		
+			/*
 			_timer = window.setTimeout(function(){
 				if(_drawer.height() == _DRAWER_HEIGHT){
 					_drawer.animate( { height: 0 }, _ANIMATION_DURATION);
@@ -92,6 +121,7 @@ var SiteNav = function(){};
 					_drawer.find("section").addClass("hide");
 				}
 			}, 500);
+			*/
 		}
 	});
 }(jQuery));
