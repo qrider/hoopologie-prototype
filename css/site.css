@@ -9,6 +9,14 @@ ul{margin:0;}
 h1{
 	font-size: 20px;
 }
+h2{
+	font-size: 14px;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	line-height: 1.2
+}
 h4{
 	font-size: 14px;
 	margin: 0;
@@ -22,23 +30,31 @@ h4{
 	margin: 0 auto;
 }
 
-.row-fluid [class*="span"]{min-height: 25px;}
+.row-fluid [class*="span"]{min-height: 11px;}
 .logo{
 	background: url('../img/twin-hoops-logo.png') no-repeat 0 0;
 	width: 300px;
 	height: 45px;
 	text-align: center;
+	margin: 30px 0 15px 35px;
+}
+.pagefooter h1{
+	background: url('../img/hoopologie-hoop-logo-brown.png') no-repeat 0 0;
+	width: 250px;
+	height: 87px;
+	text-align: center;
 }
 
-/*Nav Items*/
+
 header .nav{margin:0;}
 header .top .nav a{
 	color: #b843bd;	
 	background-color: transparent;
 }
 header .top .nav a:hover{
-	color: #fff;	
-	background-color: #b843bd;
+	color: #77167B;	
+	background-color: transparent;
+	text-decoration: underline;
 }
 a[class*="color"]:link,
 a[class*="color"]:visited{
@@ -52,12 +68,16 @@ a[class*="color"]:visited{
 }
 
 .primary ul{
-	margin: 0 5%;
+	margin: 0;
 }
 .primary .nav-pills > li > a{
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 39px;
+	padding-right: 39px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
 }
+
 /*Module*/
 .module {
 	margin: 10px 0;
@@ -191,34 +211,6 @@ a.color7-1:hover{
 	background-color: #91E2BD;
 }
 
-
-/*OLD*/
-
-.drawer h3{
-	font-size: 20px;
-	line-height: 22px;
-	border-radius: 
-}
-.drawer{	
-	top: 102px;	
-}
-.drawer section{
-	padding: 15px;
-	-webkit-border-bottom-left-radius: 4px;
-	-moz-border-bottom-left-radius: 4px;
-	border-bottom-left-radius: 4px;
-	-webkit-border-bottom-right-radius: 4px;
-	-moz-border-bottom-right-radius: 4px;
-	border-bottom-right-radius: 4px;
-}
-.drawer h3{
-	margin: 0 0 10px 0;
-	color: #562700;
-}
-.drawer a{
-	color: #562700;
-}
-
 .carousel .item1{
 
 	background: url("../img/carousel1.jpg") no-repeat 0 0;
@@ -234,38 +226,52 @@ nav > ul{
 .horizontal li{
 	display:inline-block;
 }
-
-.newsletter-banner input{
-	margin: 0 0 0 10px;
+.sociallogos{
+	border-top: 1px dashed #BA9D82;
+	border-bottom: 1px dashed #BA9D82;
 }
-.socialcontent header{
-	position: relative;
-}
-.socialcontent .icons-socialmedia{
-	position: absolute;
-	right:0;
-	top:0;
-}
-.socialcontent .icons-socialmedia li{
-	display: block;
+.sociallogos li{
+	padding-right: 50px;
 	float: left;
-	margin: 0 5px;
+	text-transform: uppercase;
 }
-/*icons*/
-.icons-socialmedia .icon{
-	background: url("../img/icons-socialmedia.png") no-repeat 0 0;
-	width: 32px;
-	height: 35px;
+.sociallogos li p{
+	padding-top:3px;
+}
+.sociallogos a{
+	background: url("../img/social-media-logos.png") no-repeat 0 0;
+	width: 103px;
+	height: 21px;
 	display: block;
 }
-
-.icon.facebook{
-	background-position: -24px 0;
+.sociallogos a[title="pinterest"]{
+	background-position: 0 -26px;
+	height: 26px;
 }
-.icon.pinterest{}
-.icon.instagram{}
-.icon.twitter{}
-
+.sociallogos a[title="instagram"]{
+	background-position: 0 -86px;
+	width: 90px;
+	height: 24px;
+}
+.sociallogos a[title="youtube"]{
+	background-position: 0 -53px;
+	width: 72px;
+	height: 29px;
+}
+.sociallogos a[title="twitter"]{
+	background-position: 0 -113px;
+	height: 20px;
+}
+.legal ul{
+	width: auto;
+	padding: 36px;
+}
+.legal ul li{
+	padding-right: 50px;
+}
+.legal a{
+	color: #ba9d82;
+}
 /*utilities*/
 .flush{
 	margin:0;

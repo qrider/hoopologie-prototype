@@ -52,7 +52,7 @@ var SiteNav = function(){};
 
 (function($){
 	var _DRAWER_HEIGHT = 162;
-	var _ANIMATION_DURATION = 300;
+	var _ANIMATION_DURATION = 200;
 	var _MAINOFFSET = 112;
 	var _drawer = $("section.drawer .drawer-container");	
 	var _main = $("div.main");
@@ -67,23 +67,18 @@ var SiteNav = function(){};
 		},
 		initialAnimation : function(){
 			var navItems = this.$module.find("a");
-			var prevItem;
 			var end = navItems.length - 1;
 			var count = 0;
 			var timer = window.setInterval(function(){
 				var item = $(navItems[count]);
 				item.addClass("active");
 
-				if(prevItem){
-					prevItem.removeClass("active");
-				}
-				prevItem = item;
 
 				if(count == end){
 					window.clearTimeout(timer);
 					//handle last item
 					timer = window.setTimeout(function(){
-						prevItem.removeClass("active");
+						navItems.removeClass("active");
 					}, _ANIMATION_DURATION)
 				}
 				count++;
