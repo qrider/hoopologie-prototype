@@ -17,9 +17,23 @@ h2{
 	font-weight: normal;
 	line-height: 1.2
 }
+h3{
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.2;
+	margin: 10px 0 3px;
+}
+
 h4{
 	font-size: 14px;
 	margin: 0;
+}
+nav  ul{
+	text-decoration: none;
+	list-style-type: none;	
+}
+.horizontal li{
+	display:inline-block;
 }
 .bgcompcolor{
 	background-color: #E7FF73;
@@ -66,7 +80,29 @@ a[class*="color"]:visited{
 .nav-pills a[class*="color"].active{
 	color: #fff;
 }
-
+.primary section{
+	padding: 0 35px 10px;
+}
+.primary.tabcontent{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.primary section .sub > a{
+	color: #562700;
+}
+.primary section .sub ul a,
+.primary section .sub ul li{
+	font-size: 12px;
+	line-height: 16px;
+}
+.primary section .column{
+	padding-right: 40px;
+}
+.primary section .sub ul{
+	padding-right: 20px;
+}
 .primary ul{
 	margin: 0;
 }
@@ -76,6 +112,18 @@ a[class*="color"]:visited{
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	border-radius: 0;
+}
+
+.primary section .sub > a{
+	display: block;
+	color:#fff;
+}
+.primary section.color2-2{
+	border: 1px solid #EA5283;
+}
+.primary section.color2-2 .sub h3{
+	background-color: #EA5283;
+	padding: 5px;
 }
 
 /*Module*/
@@ -219,13 +267,6 @@ a.color7-1:hover{
 	margin: 0 auto;
 }
 
-nav > ul{
-	text-decoration: none;
-	list-style-type: none;	
-}
-.horizontal li{
-	display:inline-block;
-}
 .sociallogos{
 	border-top: 1px dashed #BA9D82;
 	border-bottom: 1px dashed #BA9D82;

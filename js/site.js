@@ -13,10 +13,12 @@ var SiteNav = function(){};
 		_init:function($mod){
 
 			this.$module = $mod && $($mod);
+			this.postInit();
 			this.attachEvents();
 
 			return this;
 		},
+		postInit : function(){},
 		attachEvents : function(){},
 		handleEvent : function(callback, prevDefault){
 			var _this = this;
@@ -51,22 +53,27 @@ var SiteNav = function(){};
 
 
 (function($){
-	var _DRAWER_HEIGHT = 162;
-	var _ANIMATION_DURATION = 200;
-	var _MAINOFFSET = 112;
-	var _drawer = $("section.drawer .drawer-container");	
-	var _main = $("div.main");
-	var _header = $("section.header");
-	var _timer;
+	var _DRAWER_HEIGHT = 162,
+	_ANIMATION_DURATION = 200,
+	_MAINOFFSET = 112,
+	_primaryTabs,
+	_tabContent,
+	_timer,
+	_positioned;
 
 	$.extend(SiteNav.prototype, Module, {
 		init : function(){
-			this._init("#site-nav");
+			this._init("#primary-nav");
 			this.initialAnimation();
+
 			return this;
 		},
+		postInit : function(){
+			_primaryTabs = this.$module.find(".primary-tabs");
+			_tabContent = this.$module.find(".tabcontent");
+		},
 		initialAnimation : function(){
-			var navItems = this.$module.find("a");
+			var navItems = _primaryTabs.find("a");
 			var end = navItems.length - 1;
 			var count = 0;
 			var timer = window.setInterval(function(){
@@ -85,38 +92,45 @@ var SiteNav = function(){};
 			}, _ANIMATION_DURATION)
 		},
 		attachEvents : function(){
-			this.$module.find("> ul").on(
+			_primaryTabs.on(
 				"mouseenter", "li a", this.handleEvent(this.showPrimaryNav)
 			).on("mouseleave", this.handleEvent(this.hidePrimaryNav));
-
-			_drawer.on("mouseenter", function(){window.clearTimeout(_timer);}
+			
+			_tabContent.on("mouseenter", function(){window.clearTimeout(_timer);}
 			).on("mouseleave", this.handleEvent(this.hidePrimaryNav));
+	
 		},
 		showPrimaryNav : function($el, val, ev){
-			/*
+			
 			window.clearTimeout(_timer);
 
-			_drawer.find("section").addClass("hide");
-			var activeSection = _drawer.find("section." + val);
+			_tabContent.find("section").addClass("hide");
+			_primaryTabs.find(".active").removeClass("active");
+			$el.addClass("active");
+			var activeSection = _tabContent.find("section." + val);
 			activeSection.removeClass("hide");
 
-			if(_drawer.height() == _DRAWER_HEIGHT)
-				return;
-			_drawer.animate( { height: _DRAWER_HEIGHT }, _ANIMATION_DURATION);	
-			_main.animate({top: _DRAWER_HEIGHT + _MAINOFFSET}, _ANIMATION_DURATION);
-
-			*/
+			this.positionSubNav();
+			//_tabContent.animate( { height: _DRAWER_HEIGHT }, _ANIMATION_DURATION);	
 		},
 		hidePrimaryNav : function($el, val, ev){
-			/*
+			
 			_timer = window.setTimeout(function(){
-				if(_drawer.height() == _DRAWER_HEIGHT){
-					_drawer.animate( { height: 0 }, _ANIMATION_DURATION);
-					_main.animate({top:_MAINOFFSET}, _ANIMATION_DURATION);
-					_drawer.find("section").addClass("hide");
-				}
-			}, 500);
-			*/
+					//_tabContent.animate( { height: 0 }, _ANIMATION_DURATION);
+					_tabContent.find("section").addClass("hide");
+					_primaryTabs.find(".active").removeClass("active");
+			}, 500);			
+		},
+		positionSubNav : function(){
+			if(!_positioned){
+				var bb = _primaryTabs.boundingBox();
+				_tabContent.css({
+					top: bb.bottom,
+					left: bb.left,
+					width: bb.width
+				});
+				_positioned = true;
+			}
 		}
 	});
 }(jQuery));

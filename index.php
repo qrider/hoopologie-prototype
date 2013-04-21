@@ -57,8 +57,8 @@
 					</div>	     
 		        </header>
 		        <div class="row-fluid">
-		        	<div class="span12">
-			        	<nav id="site-nav" class="primary">
+		        	<div id="primary-nav" class="span12">
+			        	<nav class="primary primary-tabs">
 			    			<ul class="nav nav-pills">
 			    				<li class="first"><a class="color2-1" href="#" data-val="decorative" title="Decorative Tape">Decorative Tapes</a></li>
 			    				<li><a class="color4-1" href="#" data-val="slickgloss">Slick Gloss Tapes</a></li>
@@ -68,24 +68,51 @@
 			    				<li class="last"><a class="color1-1" href="#" data-val="blog">Blog</a></li>
 			    			</ul>
 			        	</nav>
-			        	<nav id="site-nav-tabs" class="primary">
-							<section class="decorative hide color2-2">								
-								<nav class="sub clearfix">
-									<h3>Holographic Tapes</h3>
-									<ul class="vertical">
-										<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
-										<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
-										<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
-									</ul>
-								</nav>
-								<nav class="sub clearfix">
-									<h3>Prismatic Tapes</h3>
-									<ul class="vertical pull-left">
-										<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
-										<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
-										<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
-									</ul>
-								</nav>
+			        	<nav class="primary tabcontent">
+							<section class="decorative color2-2 clearfix hide">			
+								<div class="column pull-left">					
+									<nav class="sub clearfix">
+										<a href="#"><h3>Holographic Tapes</h3></a>
+										<div class="clearfix">
+											<ul class="vertical pull-left">
+												<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
+												<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
+												<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
+											</ul>
+											<ul class="vertical pull-left">
+												<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
+												<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
+												<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
+											</ul>
+										</div>
+									</nav>
+									<nav class="sub clearfix">
+										<a href="#"><h3>Prismatic Tapes</h3></a>
+										<ul class="vertical pull-left">
+											<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
+											<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
+											<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
+										</ul>
+									</nav>
+								</div>
+								<div class="column pull-left">					
+									<nav class="sub clearfix">
+										<a href="#"><h3>Holographic Tapes</h3></a>
+										<ul class="vertical">
+											<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
+											<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
+											<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
+										</ul>
+									</nav>
+									<nav class="sub clearfix">
+										<a href="#"><h3>Prismatic Tapes</h3></a>
+										<ul class="vertical pull-left">
+											<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
+											<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
+											<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
+										</ul>
+									</nav>
+								</div>
 							</section>
 							<section class="slickgloss hide color3-2">
 								<nav class="sub clearfix">		   
@@ -177,5 +204,6 @@
         <script>window.jQuery || document.write('<script src="js/lib/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/lib/bootstrap.js"></script>
         <script src="js/site.js"></script>
+        <script src="js/extensions.js"></script>
     </body>
 </html>
