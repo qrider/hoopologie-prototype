@@ -118,11 +118,7 @@ a[class*="color"]:visited{
 	display: block;
 	color:#fff;
 }
-.primary section.color2-2{
-	border: 1px solid #EA5283;
-}
-.primary section.color2-2 .sub h3{
-	background-color: #EA5283;
+.primary section .sub h3{
 	padding: 5px;
 }
 
@@ -167,6 +163,10 @@ a.color2-1:hover{
 .color2-2{
 	color: #F49DB9;
 	background-color: #F49DB9;
+	border: 1px solid #EA5283;
+}
+.color2-2 .sub h3{
+	background-color: #EA5283;
 }
 
 .color2-3{
@@ -182,8 +182,12 @@ a.color3-1:hover{
 }
 
 .color3-2{
-	color: #83B05A;
-	background-color: #83B05A;
+	color: #B9D98D;
+	background-color: #B9D98D;
+	border: 1px solid #83B341;
+}
+.color3-2 .sub h3{
+	background-color: #83B341;
 }
 
 .color3-3{
@@ -313,6 +317,13 @@ a.color7-1:hover{
 .legal a{
 	color: #ba9d82;
 }
+
+.policy-container h4{
+	border-bottom: 1px dashed #BA9D82;
+	padding: 5px 0 0;
+	margin: 5px 0 5px;
+}
+
 /*utilities*/
 .flush{
 	margin:0;

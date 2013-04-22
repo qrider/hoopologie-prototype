@@ -61,7 +61,7 @@
 			        	<nav class="primary primary-tabs">
 			    			<ul class="nav nav-pills">
 			    				<li class="first"><a class="color2-1" href="#" data-val="decorative" title="Decorative Tape">Decorative Tapes</a></li>
-			    				<li><a class="color4-1" href="#" data-val="slickgloss">Slick Gloss Tapes</a></li>
+			    				<li><a class="color3-1" href="#" data-val="slickgloss">Slick Gloss Tapes</a></li>
 			    				<li><a class="color5-1" href="#" data-val="electrical">Electrical Tapes</a></li>
 			    				<li><a class="color6-1" href="#" data-val="gaffer">Gaffer/Grip Tapes</a></li>
 			    				<li><a class="color7-1" href="#" data-val="protection">Protection</a></li>
@@ -114,15 +114,17 @@
 									</nav>
 								</div>
 							</section>
-							<section class="slickgloss hide color3-2">
-								<nav class="sub clearfix">		   
-									<h3>Slick Gloss Tapes</h3> 						
-									<ul class="vertical pull-left">
-										<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
-										<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
-										<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
-									</ul>
-								</nav>
+							<section class="slickgloss hide color3-2 clearfix">
+								<div class="column pull-left">
+									<nav class="sub clearfix">		   
+										<a href="#"><h3>Slick Gloss Tapes</h3></a> 						
+										<ul class="vertical pull-left">
+											<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
+											<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
+											<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
+										</ul>
+									</nav>
+								</div>
 							</section>
 			        	</nav>
 		        	</div>
@@ -177,7 +179,7 @@
 		        		</div>
 		        	</div>
 	        	</section>
-	    		<footer class="pagefooter">
+	    		<footer id="footer" class="pagefooter">
 	        		<div class="row-fluid">
 	        			<div class="span12">
 							<ul class="horizontal sociallogos clearfix frame-tb">
@@ -193,12 +195,49 @@
 						<div class="span12">
 							<div class="legal clearfix">
 								<a class="pull-left" href="#"><h1 class="hide-text">Hoopologie</h1></a>
-								<ul class="pull-left horizontal"><li><a href="#">About Us</a></li><li><a href="#">Ordering Online</a></li><li><a href="#">Contact</a></li><li><a href="#">Shipping</a></li><li><a href="#">Privacy Policy</a></li></ul>								
+								<ul class="pull-left horizontal"><li><a href="#aboutus">About Us</a></li><li><a href="#orderingonline">Ordering Online</a></li><li><a href="#contact">Contact</a></li><li><a href="#shipping">Shipping</a></li><li><a href="#privacypolicy">Privacy Policy</a></li></ul>								
 							</div>
 						</div>
 					</div>
 	        		</div>
 	        	</footer>
+	        	<section class="policy-container">
+	        		<div class="row-fluid">
+	        			<div id="aboutus" class="span12">
+	        				<h4>About Us</h4>
+	        				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+	        				<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+	        			</div>
+					</div>
+	        		<div class="row-fluid">
+	        			<div id="orderingonline" class="span12">
+	        				<h4>Ordering Online</h4>
+	        				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+	        				<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+	        			</div>
+	        		</div>
+	        		<div class="row-fluid">
+	        			<div id="contact" class="span12">
+	        				<h4>Contact</h4>
+	        				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+	        				<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+	        			</div>
+	        		</div>
+        			<div class="row-fluid">
+	        			<div id="shipping" class="span12">
+	        				<h4>Shipping</h4>
+	        				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+	        				<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+	        			</div>
+	        		</div>
+	        		<div class="row-fluid">
+	        			<div id="privacypolicy" class="span12">
+	        				<h4>Privacy Policy</h4>
+	        				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+	        				<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+	        			</div>
+	        		</div>
+	        	</section>
 	        </div>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/lib/jquery-1.9.1.min.js"><\/script>')</script>
