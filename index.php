@@ -168,7 +168,7 @@
 	        					</div>
 	        			</div>
 		        		<div class="span4">
-	    					<div class="module color1-1">
+	    					<div class="module color1-1_gradient">
 	    						<header><h2>Join Our Community</h2></header>
 	    						<div class="content">
 	    							<img src="img/tape.jpg" />

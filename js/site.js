@@ -110,7 +110,7 @@ var SiteNav = function(){};
 			var activeSection = _tabContent.find("section." + val);
 			activeSection.removeClass("hide");
 
-			this.positionSubNav();
+			this.positionSubNav($el);
 			//_tabContent.animate( { height: _DRAWER_HEIGHT }, _ANIMATION_DURATION);	
 		},
 		hidePrimaryNav : function($el, val, ev){
@@ -121,16 +121,16 @@ var SiteNav = function(){};
 					_primaryTabs.find(".active").removeClass("active");
 			}, 500);			
 		},
-		positionSubNav : function(){
-			if(!_positioned){
-				var bb = _primaryTabs.boundingBox();
+		positionSubNav : function($el){
+			//if(!_positioned){
+				var bb = $el.boundingBox();
 				_tabContent.css({
-					top: bb.bottom,
-					left: bb.left,
-					width: bb.width
+					top: bb.bottom + 2,
+					left: _primaryTabs.offset().left,
+					width: _primaryTabs.width()
 				});
 				_positioned = true;
-			}
+			//}
 		}
 	});
 }(jQuery));

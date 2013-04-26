@@ -107,8 +107,8 @@ a[class*="color"]:visited{
 	margin: 0;
 }
 .primary .nav-pills > li > a{
-	padding-left: 39px;
-	padding-right: 39px;
+	padding-left: 2.2em;
+	padding-right: 2.2em;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	border-radius: 0;
@@ -141,6 +141,10 @@ a.color1-1:hover{
 	color: #B943BD;
 	background-color: #B943BD;
 }
+.color1-1_gradient, 
+.color1-1_gradient header{
+	 background-image: -webkit-gradient(linear, 0% 100%, 100% 0%, from(#B943BD), to(#DB8FDE));
+}
 
 .color1-2{
 	color: #DB8FDE;
@@ -160,9 +164,15 @@ a.color2-1:hover{
 	background-color: #EA5283;
 }
 
+.color2-1_gradient, 
+.color2-1_gradient header{
+	 background-image: -webkit-gradient(linear, 0% 100%, 100% 0%, from(#EA5283), to(#F49DB9));
+}
+
 .color2-2{
 	color: #F49DB9;
 	background-color: #F49DB9;
+	background-image: -webkit-gradient(linear, 0% 0%, 130% 0%, from(#F49DB9), to(#EA5283));
 	border: 1px solid #EA5283;
 }
 .color2-2 .sub h3{
@@ -181,9 +191,15 @@ a.color3-1:hover{
 	background-color: #83B341;
 }
 
+.color3-1_gradient, 
+.color3-1_gradient header{
+	 background-image: -webkit-gradient(linear, 0% 100%, 100% 0%, from(#83B341), to(#B9D98D));
+}
+
 .color3-2{
 	color: #B9D98D;
 	background-color: #B9D98D;
+	background-image: -webkit-gradient(linear, 0% 0%, 130% 0%, from(#B9D98D), to(#83B341));
 	border: 1px solid #83B341;
 }
 .color3-2 .sub h3{
@@ -202,6 +218,11 @@ a.color4-1:hover{
 	background-color: #AD9FCD;
 }
 
+.color4-1_gradient, 
+.color4-1_gradient header{
+	 background-image: -webkit-gradient(linear, 0% 100%, 100% 0%, from(#AD9FCD), to(#B9D98D));
+}
+
 .color4-2{
 	color: #ACBB60;
 	background-color: #ACBB60;
@@ -217,6 +238,11 @@ a.color5-1:focus,
 a.color5-1:hover{
 	color: #FF8659;
 	background-color: #FF8659;
+}
+
+.color5-1_gradient, 
+.color5-1_gradient header{
+	 background-image: -webkit-gradient(linear, 0% 100%, 100% 0%, from(#F15851), to(#FF8659));
 }
 
 .color5-2{
