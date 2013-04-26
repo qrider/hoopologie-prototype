@@ -126,8 +126,7 @@ var SiteNav = function(){};
 				var bb = $el.boundingBox();
 				_tabContent.css({
 					top: bb.bottom + 2,
-					left: _primaryTabs.offset().left,
-					width: _primaryTabs.width()
+					left: bb.left
 				});
 				_positioned = true;
 			//}

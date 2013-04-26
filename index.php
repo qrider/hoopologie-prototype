@@ -26,108 +26,72 @@
         <!-- Add your site or application content here -->
         <div class="page">
         	<div class="shim-b">
-        		<section class="header">
-		        <header class="row-fluid">       		
-		        	<div class="span5">
-		    			<h1 class="logo hide-text">HOOPOLOGIE</h1>
-					</div>
-					<div class="span7">
-						<div class="row-fluid">
-							<div class="span6">
-								<div class="top">
-									<ul class="nav nav-pills shim-t">
-									  <li>
-									    <a href="#">Login or Register Account</a>
-									  </li>
-	  								  <li>
-									    <a href="#">Wishlist</a>
-									  </li>
-									</ul>
-								</div>
-							</div>
-							<div class="span6">
-								<div class="pull-left">
-			        				<form class="navbar-search pull-right">
-			  							<input type="text" class="search-query" placeholder="Search Hoopologie">
-									</form>
-								</div>
+        		<header>
+        			<div class="row-fluid"> 
+			        	<div class="span4">
+			    			<h1 class="logo hide-text">HOOPOLOGIE</h1>
+						</div>
+						<div class="span8 pinstripe">
+							<div class="pull-left">
+								<nav class="help-nav frame-tb clearfix">
+									<ul class="horizontal">
+									<li><a href="#">Your Account</a></li>
+									<li><span class="divider"></span></li>
+									<li><a href="#">About Us</a></li>
+									<li><span class="divider"></span></li>
+									<li><a href="#">Help</a></li>
+								</nav>
 							</div>
 						</div>
-					</div>	     
-		        </header>
-		        <div class="row-fluid">
-		        	<div id="primary-nav" class="span12">
-			        	<nav class="primary primary-tabs">
-			    			<ul class="nav nav-pills">
-			    				<li class="first"><a class="color2-1" href="#" data-val="decorative" title="Decorative Tape">Decorative Tapes</a></li>
-			    				<li><a class="color3-1" href="#" data-val="slickgloss">Slick Gloss Tapes</a></li>
-			    				<li><a class="color5-1" href="#" data-val="electrical">Electrical Tapes</a></li>
-			    				<li><a class="color6-1" href="#" data-val="gaffer">Gaffer/Grip Tapes</a></li>
-			    				<li><a class="color7-1" href="#" data-val="protection">Protection</a></li>
-			    				<li class="last"><a class="color1-1" href="#" data-val="blog">Blog</a></li>
-			    			</ul>
-			        	</nav>
-			        	<nav class="primary tabcontent">
-							<section class="decorative color2-2 clearfix hide">			
-								<div class="column pull-left">					
-									<nav class="sub clearfix">
-										<a href="#"><h3>Holographic Tapes</h3></a>
-										<div class="clearfix">
-											<ul class="vertical pull-left">
-												<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
-												<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
-												<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
-											</ul>
-											<ul class="vertical pull-left">
-												<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
-												<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
-												<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
-											</ul>
-										</div>
-									</nav>
-									<nav class="sub clearfix">
-										<a href="#"><h3>Prismatic Tapes</h3></a>
-										<ul class="vertical pull-left">
-											<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
-											<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
-											<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
-										</ul>
-									</nav>
+						<div class="span4">
+						</div>
+					</div>
+					<div class="row-fluid"> 
+						<div class="span7">
+							<nav class="header-btn-group">
+								<div class="btn-group">
+	  								<a class="btn" href="#">
+	    								<small>Shop Our</small> 
+	    								<strong>Products<span class="caret"></span></strong>	    								
+									</a>		
+									<span class="divider"></span>		
+	  								<a class="btn" href="#">
+	    								<small>Join the</small> 
+	    								<strong>Circle<span class="caret"></span></strong>	    								
+									</a>	
+									<span class="divider"></span>			
+									 <a class="btn" href="#">
+	    								<small>Host a</small> 
+	    								<strong>Hoop Party<span class="caret"></span></strong>	    								
+									</a>
+									<span class="divider"></span>			
+									 <a class="btn" href="#">
+	    								<small>Wish</small> 
+	    								<strong>List<span class="caret"></span></strong>	    								
+									</a>			
+									<span class="divider"></span>			
+									 <a class="btn" href="#">
+	    								<small>Welcome, Sign in</small> 
+	    								<strong>Your Account<span class="caret"></span></strong>	    								
+									</a>		
+									<span class="divider"></span>			
+									 <a class="btn" href="#">
+	    								<small>Shopping</small> 
+	    								<strong>Cart<span class="caret"></span></strong>	    								
+									</a>													
 								</div>
-								<div class="column pull-left">					
-									<nav class="sub clearfix">
-										<a href="#"><h3>Holographic Tapes</h3></a>
-										<ul class="vertical">
-											<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
-											<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
-											<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
-										</ul>
-									</nav>
-									<nav class="sub clearfix">
-										<a href="#"><h3>Prismatic Tapes</h3></a>
-										<ul class="vertical pull-left">
-											<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
-											<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
-											<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
-										</ul>
-									</nav>
-								</div>
-							</section>
-							<section class="slickgloss hide color3-2 clearfix">
-								<div class="column pull-left">
-									<nav class="sub clearfix">		   
-										<a href="#"><h3>Slick Gloss Tapes</h3></a> 						
-										<ul class="vertical pull-left">
-											<li class="first"><a href="#" data-val="aztecrainbow" title="Aztec Rainbow Tape">Aztec Rainbow</a></li>
-											<li><a href="#" data-val="rainbowvortex" title="Rainbow Vortex Tape">Rainbow Vortex</a></li>
-											<li class="last"><a href="#" data-val="hoopios" title="Hoopios Tape">Hoopios</a></li>
-										</ul>
-									</nav>
-								</div>
-							</section>
-			        	</nav>
-		        	</div>
-		        </div>
+							</nav>
+						</div>
+						<div class="span5 flush">
+							<form class="form-search pull-right">
+								  <div class="input-append">								  	
+								    <input type="text" class="search-query round-left" placeholder="Search Hoopologie">
+								    <button type="submit" class="btn round-right">Go</button>
+								  </div>
+							</form>
+						</div>						
+					</div>
+        		</header>	
 		    </section>
 	    	</div>
 	    	<div class="main">
