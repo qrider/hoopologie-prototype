@@ -37,7 +37,9 @@ ul, ol {
 	text-decoration: none;
 	list-style-type: none;	
 }
-
+.relative{
+	position: relative;
+}
 .horizontal li{
 	display:inline-block;
 }
@@ -50,15 +52,34 @@ ul, ol {
 	margin: 0 auto;
 }
 
-.row-fluid [class*="span"]{min-height: 11px;}
+.row-fluid [class*="span"]{min-height: 1px;}
 .logo{
 	background: url('../img/twin-hoops-logo.png') no-repeat 0 0;
 	width: 300px;
 	height: 45px;
 }
-.pinstripe{
-	border-bottom: 1px solid #B843BD;
+.relative .pinstripe-gradient{
+	position: absolute;
+	top: 36px;
+	left: 300px;
 }
+.pinstripe-gradient li{
+	background: url("../img/pinstripe-gradient.png") no-repeat 0 0;
+	display: inline-block;
+	height: 1px;
+}
+.pinstripe-gradient li:nth-child(1),
+.pinstripe-gradient li:nth-child(3){
+	width: 22px;
+}
+.pinstripe-gradient li:nth-child(3){
+	background-position:  0 -2px;
+}
+.pinstripe-gradient li:nth-child(2){
+	background: url("../img/pinstripe-gradient.png") repeat-x 0 -1px;
+	width: 615px;
+}
+
 .pagefooter h1{
 	background: url('../img/hoopologie-hoop-logo-brown.png') no-repeat 0 0;
 	width: 250px;
@@ -531,7 +552,11 @@ header .btn{
 }
 header .form-search input{
 	height: 24px;
+	width: 280px;
 	font-size: 16px;
+}
+header .form-search{
+	margin-top: 10px;
 }
 
 .header-btn-group .btn,
@@ -581,40 +606,20 @@ header .header-btn-group span.divider{
 	display: inline-block;
 	vertical-align: middle;
 }
-header .header-btn-group a:nth-child(1){
-	width: 85px;
-}
-header .header-btn-group a:nth-child(3){
-	width: 63px;
-}
-header .header-btn-group a:nth-child(5){
-	width: 104px;
-}
-header .header-btn-group a:nth-child(7){
-	width: 44px;
-}
-header .header-btn-group a:nth-child(9){
-	width: 124px;
-}
-header .header-btn-group a:nth-child(11){
-	width: 58px;
-}
 
 header .header-btn-group a .caret{
 	margin-left: 3px;
 }
 header .header-btn-group strong{
-	position: absolute;
+	/*position: absolute;*/
 	font-size: 18px !important;
 	top: 14px;
 	left: 10px;
-	width: 50px;
 	text-align: left;;
 }
 header .header-btn-group small{
-	position: absolute;
-	top: 1px;
-	left: 10px;
-	width: 50px;
+	/*position: absolute;*/
+	display: block;
+	line-height: 14px;
 	text-align: left;;
 }

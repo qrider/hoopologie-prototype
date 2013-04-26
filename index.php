@@ -27,11 +27,11 @@
         <div class="page">
         	<div class="shim-b">
         		<header>
-        			<div class="row-fluid"> 
+        			<div class="row-fluid relative"> 
 			        	<div class="span4">
 			    			<h1 class="logo hide-text">HOOPOLOGIE</h1>
 						</div>
-						<div class="span8 pinstripe">
+						<div class="span3">
 							<div class="pull-left">
 								<nav class="help-nav frame-tb clearfix">
 									<ul class="horizontal">
@@ -43,11 +43,20 @@
 								</nav>
 							</div>
 						</div>
-						<div class="span4">
+						<div class="span5">
+							<form class="form-search pull-right">
+							  <div class="input-append">								  	
+							    <input type="text" class="search-query round-left" placeholder="Search Hoopologie">
+							    <button type="submit" class="btn round-right">Go</button>
+							  </div>
+							</form>
 						</div>
+						<ul class="pinstripe-gradient">
+							<li></li><li></li><li></li>
+						</ul>
 					</div>
 					<div class="row-fluid"> 
-						<div class="span7">
+						<div class="span12">
 							<nav class="header-btn-group">
 								<div class="btn-group">
 	  								<a class="btn" href="#">
@@ -83,12 +92,7 @@
 							</nav>
 						</div>
 						<div class="span5 flush">
-							<form class="form-search pull-right">
-								  <div class="input-append">								  	
-								    <input type="text" class="search-query round-left" placeholder="Search Hoopologie">
-								    <button type="submit" class="btn round-right">Go</button>
-								  </div>
-							</form>
+
 						</div>						
 					</div>
         		</header>	
