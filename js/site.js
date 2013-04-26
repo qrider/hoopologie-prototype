@@ -13,12 +13,12 @@ var SiteNav = function(){};
 		_init:function($mod){
 
 			this.$module = $mod && $($mod);
-			this.postInit();
+			this.primeCache();
 			this.attachEvents();
 
 			return this;
 		},
-		postInit : function(){},
+		primeCache : function(){},
 		attachEvents : function(){},
 		handleEvent : function(callback, prevDefault){
 			var _this = this;
@@ -64,44 +64,19 @@ var SiteNav = function(){};
 	$.extend(SiteNav.prototype, Module, {
 		init : function(){
 			this._init("#primary-nav");
-			this.initialAnimation();
-
 			return this;
 		},
-		postInit : function(){
-			_primaryTabs = this.$module.find(".primary-tabs");
-			_tabContent = this.$module.find(".tabcontent");
-		},
-		initialAnimation : function(){
-			var navItems = _primaryTabs.find("a");
-			var end = navItems.length - 1;
-			var count = 0;
-			var timer = window.setInterval(function(){
-				var item = $(navItems[count]);
-				item.addClass("active");
-
-
-				if(count == end){
-					window.clearTimeout(timer);
-					//handle last item
-					timer = window.setTimeout(function(){
-						navItems.removeClass("active");
-					}, _ANIMATION_DURATION)
-				}
-				count++;
-			}, _ANIMATION_DURATION)
+		primeCache : function(){
+			//_primaryTabs = this.$module.find(".header-btn-group a");			
 		},
 		attachEvents : function(){
-			_primaryTabs.on(
-				"mouseenter", "li a", this.handleEvent(this.showPrimaryNav)
-			).on("mouseleave", this.handleEvent(this.hidePrimaryNav));
-			
-			_tabContent.on("mouseenter", function(){window.clearTimeout(_timer);}
-			).on("mouseleave", this.handleEvent(this.hidePrimaryNav));
-	
+			this.$module
+				.on("mouseenter", ".header-btn-group a", this.handleEvent(this.showPrimaryFlyout))
+				.on("mouseleave", ".header-btn-group a", this.handleEvent(this.hidePrimaryFlyout));	
 		},
 		showPrimaryNav : function($el, val, ev){
 			
+			/*
 			window.clearTimeout(_timer);
 
 			_tabContent.find("section").addClass("hide");
@@ -111,15 +86,17 @@ var SiteNav = function(){};
 			activeSection.removeClass("hide");
 
 			this.positionSubNav($el);
+			*/
 			//_tabContent.animate( { height: _DRAWER_HEIGHT }, _ANIMATION_DURATION);	
 		},
 		hidePrimaryNav : function($el, val, ev){
-			
+			/*
 			_timer = window.setTimeout(function(){
 					//_tabContent.animate( { height: 0 }, _ANIMATION_DURATION);
 					_tabContent.find("section").addClass("hide");
 					_primaryTabs.find(".active").removeClass("active");
-			}, 500);			
+			}, 500);	
+			*/		
 		},
 		positionSubNav : function($el){
 			//if(!_positioned){

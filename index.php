@@ -55,7 +55,7 @@
 							<li></li><li></li><li></li>
 						</ul>
 					</div>
-					<div class="row-fluid"> 
+					<div id="primary-nav" class="row-fluid"> 
 						<div class="span12">
 							<nav class="header-btn-group">
 								<div class="btn-group">
@@ -89,11 +89,47 @@
 	    								<strong>Cart<span class="caret"></span></strong>	    								
 									</a>													
 								</div>
+								<div class="monster-flyout">
+									<div class="pinstripe"></div>
+									<div class="clearfix">
+										<nav class="pull-left">
+											<ul>
+												<li><a href="#" data-val="decorative">Decorative Tapes</a></li>
+												<li><a href="#" data-val="vinyl">Vinyl Tapes</a></li>
+												<li><a href="#" data-val="gaffer-grip">Gaffer/Grip Tapes</a></li>
+												<li><a href="#" data-val="decorative">Decorative Tapes</a></li>
+											</ul>
+										</nav>
+										<div class="nav-content pull-left clearfix">
+											<div class="decorative_nav-content">
+												<ul class="pull-left">
+													<li><a href="#">Holographic</a></li>
+													<li><a href="#">Prismatic</a></li>
+													<li><a href="#">Glitter</a></li>
+													<li><a href="#">Mirror</a></li>
+												</ul>
+											</div>
+											<div class="gaffer-grip_nav-content">
+												<ul class="pull-left">
+													<li><a href="#">Holographic</a></li>
+													<li><a href="#">Prismatic</a></li>
+													<li><a href="#">Glitter</a></li>
+													<li><a href="#">Mirror</a></li>
+												</ul>
+											</div>
+											<div class="decorative_nav-content">
+												<ul class="pull-left">
+													<li><a href="#">Holographic</a></li>
+													<li><a href="#">Prismatic</a></li>
+													<li><a href="#">Glitter</a></li>
+													<li><a href="#">Mirror</a></li>
+												</ul>
+											</div>	
+										</div>
+									</div>
+								</div>
 							</nav>
-						</div>
-						<div class="span5 flush">
-
-						</div>						
+						</div>					
 					</div>
         		</header>	
 		    </section>
