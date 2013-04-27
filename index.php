@@ -59,72 +59,117 @@
 						<div class="span12">
 							<nav class="header-btn-group">
 								<div class="btn-group">
-	  								<a class="btn" href="#">
+	  								<a class="btn" data-val="catalog" href="#">
 	    								<small>Shop Our</small> 
-	    								<strong>Products<span class="caret"></span></strong>	    								
+	    								<strong>Product Catalog<span class="caret"></span></strong>	    								
 									</a>		
 									<span class="divider"></span>		
-	  								<a class="btn" href="#">
-	    								<small>Join the</small> 
-	    								<strong>Circle<span class="caret"></span></strong>	    								
+									 <a class="btn" data-val="login" href="#">
+	    								<small>Welcome, Sign in</small> 
+	    								<strong>Your Account<span class="caret"></span></strong>	    								
 									</a>	
 									<span class="divider"></span>			
-									 <a class="btn" href="#">
+									 <a class="btn" data-val="party" href="#">
 	    								<small>Host a</small> 
 	    								<strong>Hoop Party<span class="caret"></span></strong>	    								
 									</a>
 									<span class="divider"></span>			
-									 <a class="btn" href="#">
+									 <a class="btn" data-val="wishlist" href="#">
 	    								<small>Wish</small> 
 	    								<strong>List<span class="caret"></span></strong>	    								
 									</a>			
 									<span class="divider"></span>			
-									 <a class="btn" href="#">
-	    								<small>Welcome, Sign in</small> 
-	    								<strong>Your Account<span class="caret"></span></strong>	    								
-									</a>		
+		  							<a class="btn" data-val="preferred" href="#">
+	    								<small>Prefered Member</small> 
+	    								<strong>Mandala Club<span class="caret"></span></strong>	    								
+									</a>
 									<span class="divider"></span>			
-									 <a class="btn" href="#">
+									 <a class="btn" data-val="cart" href="#">
 	    								<small>Shopping</small> 
 	    								<strong>Cart<span class="caret"></span></strong>	    								
 									</a>													
 								</div>
-								<div class="monster-flyout">
+								<div class="primary-flyout flyout hide">
 									<div class="pinstripe"></div>
-									<div class="clearfix">
-										<nav class="pull-left">
-											<ul>
-												<li><a href="#" data-val="decorative">Decorative Tapes</a></li>
-												<li><a href="#" data-val="vinyl">Vinyl Tapes</a></li>
-												<li><a href="#" data-val="gaffer-grip">Gaffer/Grip Tapes</a></li>
-												<li><a href="#" data-val="decorative">Decorative Tapes</a></li>
-											</ul>
-										</nav>
-										<div class="nav-content pull-left clearfix">
-											<div class="decorative_nav-content">
-												<ul class="pull-left">
-													<li><a href="#">Holographic</a></li>
-													<li><a href="#">Prismatic</a></li>
-													<li><a href="#">Glitter</a></li>
-													<li><a href="#">Mirror</a></li>
+									<div class="clearfix flyout-content">
+										<div class="catalog-content section-content" style="display:none">
+											<nav class="pull-left frame">
+												<ul>
+													<li><a href="#" data-val="decorative" data-width="400">Decorative Tapes<i class="icon-chevron-right"></i></a></li>
+													<li><a href="#" data-val="vinyl" data-width="400">Vinyl Tapes<i class="icon-chevron-right"></i></a></li>
+													<li><a href="#" data-val="gaffer-grip" data-width="400">Gaffer/Grip Tapes<i class="icon-chevron-right"></i></a></li>
+													<li><a href="#" data-val="decorative" data-width="400">Decorative Tapes<i class="icon-chevron-right"></i></a></li>
+												</ul>
+											</nav>
+											<div class="nav-content-container pull-left clearfix">
+												<div class="decorative_nav-content nav-content" style="display:none">
+													<ul class="pull-left">
+														<li><a href="#">Holographic</a></li>
+														<li><a href="#">Prismatic</a></li>
+														<li><a href="#">Glitter</a></li>
+														<li><a href="#">Mirror</a></li>
+													</ul>
+												</div>
+												<div class="gaffer-grip_nav-content nav-content" style="display:none">
+													<ul class="pull-left">
+														<li><a href="#">Holographic</a></li>
+														<li><a href="#">Prismatic</a></li>
+														<li><a href="#">Glitter</a></li>
+														<li><a href="#">Mirror</a></li>
+													</ul>
+												</div>
+												<div class="decorative_nav-content nav-content" style="display:none">
+													<ul class="pull-left">
+														<li><a href="#">Holographic</a></li>
+														<li><a href="#">Prismatic</a></li>
+														<li><a href="#">Glitter</a></li>
+														<li><a href="#">Mirror</a></li>
+													</ul>
+												</div>	
+											</div>
+										</div>										
+										<div class="login-content section-content" style="display:none">
+											<div class="frame">
+												<div class="division">
+													<a class="btn btn-gold">Sign in</a>
+													<div><span>New Customer?</span><a class="btn btn-link" href="#">Start Here.</a></div>
+												</div>
+												<div>
+													<ul>
+														<li><a href="#">Your Account</a></li>
+														<li><a href="#">Your Orders</a></li>
+														<li><a href="#">Your Wish List</a></li>
+														<li><a href="#">Your Recommendations</a></li>
+													</ul>
+												</div>											
+											</div>
+										</div>
+										<div class="party-content section-content" style="display:none">
+											<div class="frame">
+												<iframe width="420" height="315" src="http://www.youtube.com/embed/C46FZmSOU0g?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+											</div>
+										</div>
+										<div class="wishlist-content section-content" style="display:none">
+											<div class="frame">
+												<ul>
+													<li><a class="btn btn-link" href="#">Your Wish List</a></li>												
+													<li><a class="btn btn-gold">Create a Wish List</a></li>												
 												</ul>
 											</div>
-											<div class="gaffer-grip_nav-content">
-												<ul class="pull-left">
-													<li><a href="#">Holographic</a></li>
-													<li><a href="#">Prismatic</a></li>
-													<li><a href="#">Glitter</a></li>
-													<li><a href="#">Mirror</a></li>
-												</ul>
+										</div>										
+										<div class="preferred-content section-content" style="display:none">
+											<div class="frame">
+												<p class="copy">Join the Mandala Club to recieve special perks such as free shipping, special discounts, and more.</p>
+												<a class="btn btn-gold">Get Started</a>		
 											</div>
-											<div class="decorative_nav-content">
-												<ul class="pull-left">
-													<li><a href="#">Holographic</a></li>
-													<li><a href="#">Prismatic</a></li>
-													<li><a href="#">Glitter</a></li>
-													<li><a href="#">Mirror</a></li>
-												</ul>
-											</div>	
+										</div>
+										<div class="cart-content section-content" style="display:none">
+											<div class="frame">
+												<div class="strong">Your Shopping Cart is empty.</div>
+												<p class="copy">See our recommended products to help get you started. <a href="#">Recommendations</a></p>
+												<p class="copy">If you already have an account, sign in.</p>
+												<a class="btn btn-gold">View Cart (0)</a>
+											</div>
 										</div>
 									</div>
 								</div>

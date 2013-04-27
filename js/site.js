@@ -28,7 +28,7 @@ var SiteNav = function(){};
 					event.preventDefault();
 				}
 
-				var $el = $(event.target);
+				var $el = $(event.currentTarget);
 				var val = $el.data("val");
 
 				callback.apply(_this, [$el, val, event]);
@@ -55,8 +55,9 @@ var SiteNav = function(){};
 (function($){
 	var _DRAWER_HEIGHT = 162,
 	_ANIMATION_DURATION = 200,
-	_MAINOFFSET = 112,
+	_MAINOFFSET = 200,
 	_primaryTabs,
+	_flyout,
 	_tabContent,
 	_timer,
 	_positioned;
@@ -67,20 +68,51 @@ var SiteNav = function(){};
 			return this;
 		},
 		primeCache : function(){
-			//_primaryTabs = this.$module.find(".header-btn-group a");			
+			_primaryTabs = this.$module.find(".header-btn-group > .btn-group a");		
+			_flyout = this.$module.find(".primary-flyout");
 		},
 		attachEvents : function(){
 			this.$module
-				.on("mouseenter", ".header-btn-group a", this.handleEvent(this.showPrimaryFlyout))
-				.on("mouseleave", ".header-btn-group a", this.handleEvent(this.hidePrimaryFlyout));	
+				.on("mouseenter", ".header-btn-group > .btn-group a", this.handleEvent(this.showPrimaryFlyout))
+				.on("mouseleave", ".header-btn-group > .btn-group a", this.handleEvent(this.hidePrimaryFlyout))
+				.on("mouseenter", ".primary-flyout", this.handleEvent(this.clearTimeout))
+				.on("mouseleave", ".primary-flyout", this.handleEvent(this.hidePrimaryFlyout))
+				.on("mouseenter", ".catalog-content a", this.handleEvent(this.showCatalogPane))				
 		},
-		showPrimaryNav : function($el, val, ev){
-			
-			/*
-			window.clearTimeout(_timer);
+		showPrimaryFlyout : function($el, val, ev){			
+			//console.log($el);
+			this.clearTimeout();
 
+			//reset
+			_flyout.find(".nav-content").hide();
+			_flyout.find(".section-content").hide();
+			_flyout.width("auto");
+			_primaryTabs.filter(".hover").removeClass("hover");
+
+			$el.addClass("hover");
+			_flyout.show();
+			_flyout.find("." + val + "-content").show();
+			var bb = $el.boundingBox();
+
+			if(bb.left + _flyout.outerWidth() > $(window).width() - _MAINOFFSET){
+				_flyout.css({
+					left: bb.right - _flyout.outerWidth(),
+					top: bb.bottom
+				});
+
+			}else{
+				//console.log(bb);
+				_flyout.css({
+					left: bb.left,
+					top: bb.bottom
+				});
+			}
+			//debugger;
+
+			
+
+			/*
 			_tabContent.find("section").addClass("hide");
-			_primaryTabs.find(".active").removeClass("active");
 			$el.addClass("active");
 			var activeSection = _tabContent.find("section." + val);
 			activeSection.removeClass("hide");
@@ -89,14 +121,35 @@ var SiteNav = function(){};
 			*/
 			//_tabContent.animate( { height: _DRAWER_HEIGHT }, _ANIMATION_DURATION);	
 		},
-		hidePrimaryNav : function($el, val, ev){
-			/*
+		clearTimeout : function(){
+			window.clearTimeout(_timer);
+		},
+		hidePrimaryFlyout : function($el, val, ev){
+			
 			_timer = window.setTimeout(function(){
+					_flyout.find(".nav-content").hide();
+					_flyout.find(".section-content").hide();
+					_flyout.hide();
+					_flyout.width("auto");
 					//_tabContent.animate( { height: 0 }, _ANIMATION_DURATION);
-					_tabContent.find("section").addClass("hide");
-					_primaryTabs.find(".active").removeClass("active");
-			}, 500);	
-			*/		
+					//_tabContent.find("section").addClass("hide");
+					_primaryTabs.filter(".hover").removeClass("hover");
+			}, 400);	
+					
+		},
+		showCatalogPane : function($el, val, e){
+
+			var _currentWidth = _flyout.width();
+			var _targetWidth = $el.data("width");
+			_flyout.find(".nav-content").hide();
+			_flyout.find("." + val + "_nav-content").show();
+			debugger;
+			if(_currentWidth != _targetWidth){
+				_flyout.animate({
+					width: _targetWidth
+				}, 200);
+			}
+
 		},
 		positionSubNav : function($el){
 			//if(!_positioned){

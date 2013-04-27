@@ -37,6 +37,9 @@ ul, ol {
 	text-decoration: none;
 	list-style-type: none;	
 }
+.strong, strong{
+	font-weight: bold;
+}
 .relative{
 	position: relative;
 }
@@ -79,6 +82,44 @@ ul, ol {
 	background: url("../img/pinstripe-gradient.png") repeat-x 0 -1px;
 	width: 615px;
 }
+.primary-flyout{
+	width: auto;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+.flyout-content{
+	background-color: #FEFBF6;
+	border-top: 3px solid #CA69CE;
+	-moz-box-shadow:    3px 3px 5px 0px #c4a7c6;
+  	-webkit-box-shadow: 3px 3px 5px 0px #c4a7c6;
+  	box-shadow:         3px 3px 5px 0px #c4a7c6;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+
+}
+.flyout-content nav a{
+	display: block;
+	width: 150px;
+	color: #562700;
+}
+.flyout-content nav a i{
+	float: right;
+	display: none;
+}
+.flyout-content nav a:hover{
+	color: #08C;
+	text-decoration: none;
+	font-weight: bold;
+}
+.flyout-content nav a:hover i{
+	display: inline-block;
+}
 
 .pagefooter h1{
 	background: url('../img/hoopologie-hoop-logo-brown.png') no-repeat 0 0;
@@ -98,54 +139,7 @@ header .top .nav a:hover{
 	background-color: transparent;
 	text-decoration: underline;
 }
-a[class*="color"]:link,
-a[class*="color"]:visited{
-	background-color: transparent;
-}
 
-.nav-pills a[class*="color"]:focus,
-.nav-pills a[class*="color"]:hover,
-.nav-pills a[class*="color"].active{
-	color: #fff;
-}
-.primary section{
-	padding: 0 35px 10px;
-}
-.primary.tabcontent{
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1;
-}
-.primary section .sub > a{
-	color: #562700;
-}
-.primary section .sub ul a,
-.primary section .sub ul li{
-	font-size: 12px;
-	line-height: 16px;
-}
-.primary section .column{
-	padding-right: 40px;
-}
-.primary section .sub ul{
-	padding-right: 20px;
-}
-.primary ul{
-	margin: 0;
-}
-.primary .nav-pills > li > a{
-	padding-left: 2.2em;
-	padding-right: 2.2em;
-}
-
-.primary section .sub > a{
-	display: block;
-	color:#fff;
-}
-.primary section .sub h3{
-	padding: 5px;
-}
 
 /*Module*/
 .module {
@@ -422,6 +416,10 @@ a.color7-1:hover{
 .noround{
 	border-radius: 0 !important;
 }
+.copy{
+	line-height: 14px;
+}
+
 .round{
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px !important;
@@ -463,20 +461,10 @@ a.color7-1:hover{
 	-moz-border-bottom-right-radius: 4px !important;
 	border-top-bottom-radius: 4px !important;
 }
-
-.monster-flyout{
-	-webkit-border-top-left-radius: 0 !important;
-	-moz-border-top-left-radius: 0 !important;
-	border-top-left-radius: 0 !important;
-	-webkit-border-bottom-left-radius: 4px !important;
-	-moz-border-bottom-left-radius: 4px !important;
-	border-top-bottom-radius: 4px !important;
-	-webkit-border-top-right-radius: 4px !important;
-	-moz-border-top-right-radius: 4px !important;
-	border-top-right-radius: 4px !important;
-	-webkit-border-bottom-right-radius: 4px !important;
-	-moz-border-bottom-right-radius: 4px !important;
-	border-top-bottom-radius: 4px !important;
+.division{
+	margin: 10px 0;
+	padding-bottom: 10px 0; 
+	border-bottom: 1px solid #ab8aad;
 }
 
 
@@ -526,42 +514,34 @@ header .btn:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.btn-primary.disabled,
-.btn-primary[disabled] {
-  color: #ffffff;
-  background-color: #ff00ff;
-  *background-color: #ff00ff;
-}
-.btn-primary:active,
-.btn-primary.active {
-  background-color: #ff00ff \9;
-}
-
 /*BOOTSTRAP OVERRIDES*/
 input{
 	color: #000 !important;
 }
 
-header  .btn,
+header .btn-group .btn,
+header .form-search .btn,
 header .btn-group.open .btn.dropdown-toggle{
 	background-color: #da8ddd;
 	background-image: none;
 }
-header .btn:hover,
-header .btn:focus{
+header .header-btn-group > .btn-group .btn:hover,
+header .header-btn-group > .btn-group .btn:focus,
+header .header-btn-group > .btn-group .btn.hover,
+header .form-search .btn:hover,
+header .form-search .btn:focus,
+header .form-search .btn.hover{
 	background-color: #ca69ce;
 	color: #38003A;
 }
 
-header .btn-group > .btn{
+header .btn-group > .btn,
+header .form-search .btn{
 	font-size: 16px !important;
 }
 
-header .btn{
+header .btn-group .btn
+header .form-search .btn{
 	padding: 6px 8px;
 	margin-bottom: 0;
 }
@@ -574,7 +554,7 @@ header .form-search{
 	margin-top: 10px;
 }
 
-.header-btn-group .btn,
+.header-btn-group > .btn-group .btn,
 header .header-btn-group .btn:focus{
 	background-color: transparent;
 	background-image: none;
@@ -609,8 +589,9 @@ span.divider{
 	vertical-align: middle;
 }
 
-header .header-btn-group a{
-	height: 30px;
+header .header-btn-group > .btn-group a,
+header .form-search .btn{
+	height: 34px;
 }
 header .header-btn-group span.divider{
 	background-color: #562700;
@@ -632,4 +613,39 @@ header .header-btn-group small{
 	display: block;
 	line-height: 14px;
 	text-align: left;;
+}
+
+.login-content .btn-gold{
+	width: 150px;
+}
+.preferred-content{
+	width: 232px;
+}
+.cart-content{
+	width: 244px;
+}
+.btn-gold {
+	color: #562700;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #FFC300;
+	*background-color: #FFC300;
+	background-image: -moz-linear-gradient(top, #FFDD6D, #FFC300);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFDD6D), to(#FFC300));
+	background-image: -webkit-linear-gradient(top, #FFDD6D, #FFC300);
+	background-image: -o-linear-gradient(top, #FFDD6D, #FFC300);
+	background-image: linear-gradient(to bottom, #FFDD6D, #FFC300);
+	background-repeat: repeat-x;
+	border-color: #FFC300;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFDD6D', endColorstr='#FFC300', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-gold:hover,
+.btn-gold:active,
+.btn-gold.active,
+.btn-gold.disabled,
+.btn-gold[disabled] {
+	color: #FFFFFF;
+	background-color: #FFC300;
+	*background-color: #003bb3;
 }
