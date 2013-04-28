@@ -45,6 +45,15 @@ var SiteNav = function(){};
 		init : function(){
 			this._siteNav = new SiteNav().init();
 
+			$('#homePageCarousel').bxSlider({
+				auto: true,
+				speed: 1000,
+				pause: 5000,
+				mode: 'fade',
+				infiniteLoop: false,
+				controls: false
+			});
+
 			return this._init();
 		}
 	});
@@ -60,11 +69,13 @@ var SiteNav = function(){};
 	_flyout,
 	_tabContent,
 	_timer,
-	_positioned;
+	_positioned,
+	_self = this;
 
 	$.extend(SiteNav.prototype, Module, {
 		init : function(){
 			this._init("#primary-nav");
+			_self = this;
 			return this;
 		},
 		primeCache : function(){
@@ -76,8 +87,15 @@ var SiteNav = function(){};
 				.on("mouseenter", ".header-btn-group > .btn-group a", this.handleEvent(this.showPrimaryFlyout))
 				.on("mouseleave", ".header-btn-group > .btn-group a", this.handleEvent(this.hidePrimaryFlyout))
 				.on("mouseenter", ".primary-flyout", this.handleEvent(this.clearTimeout))
-				.on("mouseleave", ".primary-flyout", this.handleEvent(this.hidePrimaryFlyout))
-				.on("mouseenter", ".catalog-content a", this.handleEvent(this.showCatalogPane))				
+				.on("mouseleave", ".primary-flyout", this.handleEvent(this.hidePrimaryFlyout));					
+
+
+			this.$module.find(".catalog-content > nav > ul").menuAim({
+				activate : function(li){
+					var $el = $(li).find("a");
+					_self.showCatalogPane($el, $el.data("val"));
+				}
+			});	
 		},
 		showPrimaryFlyout : function($el, val, ev){			
 			//console.log($el);
@@ -107,19 +125,6 @@ var SiteNav = function(){};
 					top: bb.bottom
 				});
 			}
-			//debugger;
-
-			
-
-			/*
-			_tabContent.find("section").addClass("hide");
-			$el.addClass("active");
-			var activeSection = _tabContent.find("section." + val);
-			activeSection.removeClass("hide");
-
-			this.positionSubNav($el);
-			*/
-			//_tabContent.animate( { height: _DRAWER_HEIGHT }, _ANIMATION_DURATION);	
 		},
 		clearTimeout : function(){
 			window.clearTimeout(_timer);
@@ -138,12 +143,11 @@ var SiteNav = function(){};
 					
 		},
 		showCatalogPane : function($el, val, e){
-
 			var _currentWidth = _flyout.width();
 			var _targetWidth = $el.data("width");
 			_flyout.find(".nav-content").hide();
 			_flyout.find("." + val + "_nav-content").show();
-			debugger;
+
 			if(_currentWidth != _targetWidth){
 				_flyout.animate({
 					width: _targetWidth
